@@ -1,7 +1,7 @@
 import os
 from .common import *
 
-SECRET_KEY = 'va7kfak0*c_u!qh1hvw8y7_ar3vonyl*u+2qxr51i#5k$p%35r'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
